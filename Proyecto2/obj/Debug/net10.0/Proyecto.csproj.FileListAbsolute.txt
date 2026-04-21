@@ -1,0 +1,14 @@
+D:\quimica\Proyecto\bin\Debug\net10.0\Proyecto.exe
+D:\quimica\Proyecto\bin\Debug\net10.0\Proyecto.deps.json
+D:\quimica\Proyecto\bin\Debug\net10.0\Proyecto.runtimeconfig.json
+D:\quimica\Proyecto\bin\Debug\net10.0\Proyecto.dll
+D:\quimica\Proyecto\bin\Debug\net10.0\Proyecto.pdb
+D:\quimica\Proyecto\obj\Debug\net10.0\Proyecto.GeneratedMSBuildEditorConfig.editorconfig
+D:\quimica\Proyecto\obj\Debug\net10.0\Proyecto.AssemblyInfoInputs.cache
+D:\quimica\Proyecto\obj\Debug\net10.0\Proyecto.AssemblyInfo.cs
+D:\quimica\Proyecto\obj\Debug\net10.0\Proyecto.csproj.CoreCompileInputs.cache
+D:\quimica\Proyecto\obj\Debug\net10.0\Proyecto.dll
+D:\quimica\Proyecto\obj\Debug\net10.0\refint\Proyecto.dll
+D:\quimica\Proyecto\obj\Debug\net10.0\Proyecto.pdb
+D:\quimica\Proyecto\obj\Debug\net10.0\Proyecto.genruntimeconfig.cache
+D:\quimica\Proyecto\obj\Debug\net10.0\ref\Proyecto.dll

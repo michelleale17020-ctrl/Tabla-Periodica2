@@ -1,0 +1,746 @@
+body {
+    background: #fff6ed;
+    font-family: verdana;
+}
+nav {
+    height: 80px;
+    width: 100%;
+}
+nav ul{
+    font-family: verdana;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #3527F5;
+    padding: 10px 20px;
+}
+
+/* Logos */
+.logo-izq img,
+.logo-der img {
+    height: 80px;
+}
+
+/* Centro */
+.menu-centro {
+    display: flex;
+    gap: 20px;
+}
+
+/* Links */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efecto hover */
+.menu a:hover {
+    color: #FFF178;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    background: #3527F5;
+    font-family: verdana;
+    text-decoration: none;
+}
+#datos{
+    margin: 15px;
+}
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(10, 100px);
+    gap: 5px;
+}
+.no_metales {
+    background: #5EF244;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.no_metales:hover{
+    background: #ACFA9B;
+    -webkit-transform:scale(1.2);
+}
+
+.atomico {
+    font-size: 15px;
+    line-height: 0px;
+}
+.num_oxidacion {
+    font-size: 10px;
+    line-height: 0px;
+    text-align: right;
+}
+.simbolo{
+    font-size: 25px;
+    line-height: 0px;
+    text-align: center;
+}
+.nombre{
+    font-size: 13px;
+    line-height: 0px;
+    text-align: center;
+}
+.peso{
+    font-size: 10px;
+    line-height: 0px;
+    text-align: center;
+}
+.alcalino {
+    background: #FAAA28;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.alcalino:hover{
+    background:#FFCC85 ;
+    -webkit-transform:scale(1.2);
+}
+.alcalinoterreos {
+    background: #FFE833;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.alcalinoterreos:hover{
+    background:#FFF17D ;
+    -webkit-transform:scale(1.2);
+}
+.metales_pesados {
+    background: #FF977D;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.metales_pesados:hover{
+    background:#FFBDAD ;
+    -webkit-transform:scale(1.2);
+}
+.metaloides {
+    background: #0FC27B;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.metaloides:hover{
+    background:#6DE3B5 ;
+    -webkit-transform:scale(1.2);
+}
+.otros_metales {
+    background: #6DACE3;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.otros_metales:hover{
+    background:#9FC7ED ;
+    -webkit-transform:scale(1.2);
+}
+.halogenos {
+    background: #A652E3;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.halogenos:hover{
+    background:#CFA6ED ;
+    -webkit-transform:scale(1.2);
+}
+.gas_noble {
+    background: #3E31EB;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.gas_noble:hover{
+    background:#9A91FF ;
+    -webkit-transform:scale(1.2);
+}
+.lantanidos {
+    background: #25F7ED;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.lantanidos:hover{
+    background:#90F0ED ;
+    -webkit-transform:scale(1.2);
+}
+.actinidos {
+    background: #1BDED6;
+    width: 100px;
+    height: 100px;
+    border:  2px solid black;
+    border-radius: 5px;
+    -webkit-transition-duration:0.5s;
+    margin-bottom: 20px;
+     display: inline-block;
+}
+.actinidos:hover{
+    background:#7DDBD7;
+    -webkit-transform:scale(1.2);
+}
+#eq1{
+   grid-column: 1;
+    grid-row: 1;
+}
+#eq3{
+    grid-column: 1;
+    grid-row: 2;
+}
+#eq11{
+   grid-column: 1;
+   grid-row: 3;
+}
+#eq19{
+    grid-column: 1;
+    grid-row: 4;
+}
+#eq37{
+    grid-column: 1;
+    grid-row: 5;
+}
+#eq55{
+    grid-column: 1;
+    grid-row: 6;
+}
+#eq87{
+    grid-column: 1;
+    grid-row: 7;
+}
+#eq4{
+    grid-column: 2;
+    grid-row: 2;
+}
+#eq12{
+    grid-column: 2;
+    grid-row: 3;
+}
+#eq20{
+    grid-column: 2;
+    grid-row: 4;
+}
+#eq38{
+    grid-column: 2;
+    grid-row: 5;
+}
+#eq56{
+    grid-column: 2;
+    grid-row: 6;
+}
+#eq88{
+    grid-column: 2;
+    grid-row: 7;
+}
+#eq21{
+    grid-column: 3;
+    grid-row: 4;
+}
+#eq39{
+    grid-column: 3;
+    grid-row: 5;
+}
+#eq57-71{
+    grid-column: 3;
+    grid-row: 6;
+}
+#eq89-103{
+    grid-column: 3;
+    grid-row: 7;
+}
+#eq22{
+    grid-column: 4;
+    grid-row: 4;
+}
+#eq40{
+    grid-column: 4;
+    grid-row: 5;
+}
+#eq72{
+    grid-column: 4;
+    grid-row: 6;
+}
+#eq104{
+    grid-column: 4;
+    grid-row: 7;
+}
+#eq23{
+    grid-column: 5;
+    grid-row: 4;
+}
+#eq41{
+    grid-column: 5;
+    grid-row: 5;
+}
+#eq73{
+    grid-column: 5;
+    grid-row: 6;
+}
+#eq105{
+    grid-column: 5;
+    grid-row: 7;
+}
+#eq24{
+    grid-column: 6;
+    grid-row: 4;
+}
+#eq42{
+    grid-column: 6;
+    grid-row: 5;
+}
+#eq74{
+    grid-column: 6;
+    grid-row: 6;
+}
+#eq106{
+    grid-column: 6;
+    grid-row: 7;
+}
+#eq25{
+    grid-column: 7;
+    grid-row: 4;
+}
+#eq43{
+    grid-column: 7;
+    grid-row: 5;
+}
+#eq75{
+    grid-column: 7;
+    grid-row: 6;
+}
+#eq107{
+    grid-column: 7;
+    grid-row: 7;
+}
+#eq26 {
+    grid-column: 8;
+    grid-row: 4;
+}
+
+#eq44 {
+    grid-column: 8;
+    grid-row: 5;
+}
+
+#eq76 {
+    grid-column: 8;
+    grid-row: 6;
+}
+
+#eq108 {
+    grid-column: 8;
+    grid-row: 7;
+}
+#eq27 {
+    grid-column: 9;
+    grid-row: 4;
+}
+
+#eq45 {
+    grid-column: 9;
+    grid-row: 5;
+}
+
+#eq77 {
+    grid-column: 9;
+    grid-row: 6;
+}
+
+#eq109 {
+    grid-column: 9;
+    grid-row: 7;
+}
+#eq28 {
+    grid-column: 10;
+    grid-row: 4;
+}
+
+#eq46 {
+    grid-column: 10;
+    grid-row: 5;
+}
+
+#eq78 {
+    grid-column: 10;
+    grid-row: 6;
+}
+
+#eq110 {
+    grid-column: 10;
+    grid-row: 7;
+}
+#eq29 {
+    grid-column: 11;
+    grid-row: 4;
+}
+
+#eq47 {
+    grid-column: 11;
+    grid-row: 5;
+}
+
+#eq79 {
+    grid-column: 11;
+    grid-row: 6;
+}
+
+#eq111 {
+    grid-column: 11;
+    grid-row: 7;
+}
+#eq30 {
+    grid-column: 12;
+    grid-row: 4;
+}
+
+#eq48 {
+    grid-column: 12;
+    grid-row: 5;
+}
+
+#eq80 {
+    grid-column: 12;
+    grid-row: 6;
+}
+
+#eq112 {
+    grid-column: 12;
+    grid-row: 7;
+}
+#eq5{
+    grid-column: 13;
+    grid-row: 2;
+}
+#eq13{
+    grid-column: 13;
+    grid-row: 3;
+}
+#eq31 {
+    grid-column: 13;
+    grid-row: 4;
+}
+
+#eq49 {
+    grid-column: 13;
+    grid-row: 5;
+}
+
+#eq81 {
+    grid-column: 13;
+    grid-row: 6;
+}
+#eq113 {
+    grid-column: 13;
+    grid-row: 7;
+}
+#eq6{
+    grid-column: 14;
+    grid-row: 2;
+}
+#eq14{
+    grid-column: 14;
+    grid-row: 3;
+}
+#eq32{
+    grid-column: 14;
+    grid-row: 4;
+}
+#eq50 {
+    grid-column: 14;
+    grid-row: 5;
+}
+
+#eq82 {
+    grid-column: 14;
+    grid-row: 6;
+}
+
+#eq114 {
+    grid-column: 14;
+    grid-row: 7;
+}
+#eq7 {
+    grid-column: 15;
+    grid-row: 2;
+}
+
+#eq15 {
+    grid-column: 15;
+    grid-row: 3;
+}
+#eq33 {
+    grid-column: 15;
+    grid-row: 4;
+}
+
+#eq51 {
+    grid-column: 15;
+    grid-row: 5;
+}
+#eq83 {
+    grid-column: 15;
+    grid-row: 6;
+}
+
+#eq115 {
+    grid-column: 15;
+    grid-row: 7;
+}
+#eq8 {
+    grid-column: 16;
+    grid-row: 2;
+}
+
+#eq16 {
+    grid-column: 16;
+    grid-row: 3;
+}
+
+#eq34 {
+    grid-column: 16;
+    grid-row: 4;
+}
+#eq52 {
+    grid-column: 16;
+    grid-row: 5;
+}
+
+#eq84 {
+    grid-column: 16;
+    grid-row: 6;
+}
+#eq116{
+    grid-column: 16;
+    grid-row: 7;
+}
+#eq9{
+    grid-column: 17;
+    grid-row: 2;
+}
+#eq9 {
+    grid-column: 17;
+    grid-row: 2;
+}
+
+#eq17 {
+    grid-column: 17;
+    grid-row: 3;
+}
+
+#eq35 {
+    grid-column: 17;
+    grid-row: 4;
+}
+
+#eq53 {
+    grid-column: 17;
+    grid-row: 5;
+}
+
+#eq85 {
+    grid-column: 17;
+    grid-row: 6;
+}
+
+#eq117 {
+    grid-column: 17;
+    grid-row: 7;
+}
+#eq2 {
+    grid-column: 18;
+    grid-row: 1;
+}
+
+#eq10 {
+    grid-column: 18;
+    grid-row: 2;
+}
+
+#eq18 {
+    grid-column: 18;
+    grid-row: 3;
+}
+
+#eq36 {
+    grid-column: 18;
+    grid-row: 4;
+}
+
+#eq54 {
+    grid-column: 18;
+    grid-row: 5;
+}
+
+#eq86 {
+    grid-column: 18;
+    grid-row: 6;
+}
+
+#eq118 {
+    grid-column: 18;
+    grid-row: 7;
+}
+#eq57 {
+    grid-column: 4;
+    grid-row: 9;
+}
+#eq58 {
+    grid-column: 5;
+    grid-row: 9;
+}
+#eq59 {
+    grid-column: 6;
+    grid-row: 9;
+}
+#eq60 {
+    grid-column: 7;
+    grid-row: 9;
+}
+#eq61 {
+    grid-column: 8;
+    grid-row: 9;
+}
+#eq62 {
+    grid-column: 9;
+    grid-row: 9;
+}
+#eq63 {
+    grid-column: 10;
+    grid-row: 9;
+}
+#eq64 {
+    grid-column: 11;
+    grid-row: 9;
+}
+#eq65 {
+    grid-column: 12;
+    grid-row: 9;
+}
+#eq66 {
+    grid-column: 13;
+    grid-row: 9;
+}
+#eq67 {
+    grid-column: 14;
+    grid-row: 9;
+}
+#eq68 {
+    grid-column: 15;
+    grid-row: 9;
+}
+#eq69 {
+    grid-column: 16;
+    grid-row: 9;
+}
+#eq70 {
+    grid-column: 17;
+    grid-row: 9;
+}
+#eq71 {
+    grid-column: 18;
+    grid-row: 9;
+}
+#eq89{
+    grid-column: 4;
+    grid-row: 10;
+}
+#eq90{
+    grid-column: 5;
+    grid-row: 10;
+}
+#eq91{
+    grid-column: 6;
+    grid-row: 10;
+}
+#eq92{
+    grid-column: 7;
+    grid-row: 10;
+}
+#eq93{
+    grid-column: 8;
+    grid-row: 10;
+}
+#eq94{
+    grid-column: 9;
+    grid-row: 10;
+}
+#eq95{
+    grid-column: 10;
+    grid-row: 10;
+}
+#eq96{
+    grid-column: 11;
+    grid-row: 10;
+}
+#eq97{
+    grid-column: 12;
+    grid-row: 10;
+}
+#eq98{
+    grid-column: 13;
+    grid-row: 10;
+}
+#eq99{
+    grid-column: 14;
+    grid-row: 10;
+}
+#eq100{
+    grid-column: 15;
+    grid-row: 10;
+}
+#eq101{
+    grid-column: 16;
+    grid-row: 10;
+}
+#eq102{
+    grid-column: 17;
+    grid-row: 10;
+}
+#eq103{
+    grid-column: 18;
+    grid-row: 10;
+}
